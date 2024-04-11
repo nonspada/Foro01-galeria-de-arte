@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte</title>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=aboreto:400" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Aboreto', display;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #8fd9a8;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        .container {
+            display: grid;
+        }
+
+        h1 {
+            animation: pulse 3s ease-in-out infinite alternate;
+        }
+
+        nav {
+            background-color: #b8e2d8;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            margin: 0 5px;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 20px;
+            display: none;
+            /* Secciones ocultas por defecto */
+        }
+
+        section:target {
+            display: block;
+            /* Mostrar la sección correspondiente cuando se hace clic en su enlace */
+        }
+
+        footer {
+            background-color: #8fd9a8;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            background-color: #b8e2d8;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #8fd9a8;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #6ca88a;
+        }
+
+        /* @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.2);
+            }
+        } */
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .image-grid-item {
+            background-color: #ccc; /* Color de fondo de las imágenes (solo para visualización) */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .image-grid-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .image-grid-item p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Galería de Arte</h1>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#galeria">Galería</a>
+        <a href="#sobremi">Sobre la página</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="container">
+        <section id="inicio">
+            <h2>Bienvenido a nuestra galería de arte</h2>
+            <p>Disfruta de nuestras colecciones cuidadosamente seleccionadas.</p>
+        </section>
+        <section id="galeria">
+            <h2>Galería de Arte</h2>
+            <div class="image-grid">
+                <div class="image-grid-item">
+                    <img src="ruta_a_tu_imagen.jpg" alt="Descripción de la imagen 1">
+                    <p>Descripción de la imagen 1</p>
+                </div>
+                <div class="image-grid-item">
+                    <img src="ruta_a_tu_imagen.jpg" alt="Descripción de la imagen 2">
+                    <p>Descripción de la imagen 2</p>
+                </div>
+                <!-- Agrega más imágenes con descripciones -->
+            </div>
+        </section>
+        <section id="sobremi">
+            <h2>Sobre la página</h2>
+            <p>Está página web fue hecha en HTML y CSS puro. Es un un único archivo alojado en un repositorio de Github
+                y desplegado en Github Pages.</p>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Galería de Arte - nonspada</p>
+    </footer>
+</body>
+
+</html>
