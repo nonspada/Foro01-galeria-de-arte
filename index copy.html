@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte</title>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=aboreto:400" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Aboreto', display;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #8fd9a8;
+            padding: 1rem;
+            text-align: center;
+
+        }
+
+        .container {
+            display: grid;
+            padding-bottom: 1rem;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        nav {
+            background-color: #b8e2d8;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            margin: 0 5px;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 0.3em;
+            display: none;
+            /* Secciones ocultas por defecto */
+        }
+
+        section:target {
+            display: block;
+            /* Mostrar la sección correspondiente cuando se hace clic en su enlace */
+        }
+
+        footer {
+            background-color: #8fd9a8;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        form {
+            background-color: #b8e2d8;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #8fd9a8;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #6ca88a;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .image-grid-item {
+            background-color: #ccc;
+            /* Color de fondo de las imágenes (solo para visualización) */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .image-grid-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .image-grid-item p {
+            margin-top: 10px;
+        }
+        
+        #inicio {
+            padding-bottom: 10rem;
+        }
+        
+        /* Estilo para centrar la sección "sobremi" */
+        #sobremi {
+            padding: 0 20px; /* Ajusta el padding lateral */
+            text-align: justify; /* Ajusta el texto justificado */
+        }
+        
+        /* Estilo para el formulario de contacto */
+        #contacto form {
+            background-color: #b8e2d8; /* Cambia el color de fondo del formulario */
+            padding: 20px; /* Añade relleno al formulario */
+            border-radius: 10px; /* Agrega bordes redondeados al formulario */
+        }
+
+        /* Nuevo estilo para el contenedor de campos de entrada */
+        #contacto .form-container {
+            background-color: #fff; /* Establece el color de fondo del contenedor */
+            padding: 20px; /* Añade relleno al contenedor */
+            border-radius: 10px; /* Agrega bordes redondeados al contenedor */
+            margin-bottom: 20px; /* Añade un espacio entre el contenedor y el botón */
+        }
+
+        #contacto input[type="text"],
+        #contacto textarea {
+            width: calc(100% - 22px); /* Ajusta el ancho del campo de entrada para tener en cuenta el relleno */
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            display: block; /* Hace que los campos de entrada ocupen toda la anchura disponible */
+        }
+
+        #contacto input[type="submit"] {
+            width: 100%; /* Ajusta el ancho del botón de enviar para ocupar toda la anchura del contenedor */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Galería de Arte</h1>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobremi">Sobre la página</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="container">
+        <section id="inicio">
+            <h2>Bienvenido a nuestra galería de arte</h2>
+            <p>Disfruta de nuestras colecciones cuidadosamente seleccionadas.</p>
+            <div class="image-grid">
+                <div class="image-grid-item">
+                    <img src="https://images.unsplash.com/photo-1518730371077-893c77014fe8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Patos">
+                    <p>Patos, por Javiera Argandoña</p>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://images.unsplash.com/photo-1505852012909-3da5aab64dcb?q=80&w=1991&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Patos">
+                    <p>Suricatas, por Hugo Brightling</p>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://images.unsplash.com/photo-1518730371077-893c77014fe8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Patos">
+                    <p>Patos, por Javiera Argandoña</p>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://images.unsplash.com/photo-1518730371077-893c77014fe8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Patos">
+                    <p>Patos, por Javiera Argandoña</p>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://images.unsplash.com/photo-1518730371077-893c77014fe8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Patos">
+                    <p>Patos, por Javiera Argandoña</p>
+                </div>
+                <div class="image-grid-item">
+                    <img src="https://images.unsplash.com/photo-1518730371077-893c77014fe8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Patos">
+                    <p>Patos, por Javiera Argandoña</p>
+                </div>
+                <!-- Agrega más imágenes con descripciones -->
+            </div>
+        </section>
+        <section id="sobremi">
+            <h2>Sobre la página</h2>
+            <p>Está página web fue hecha en HTML y CSS puro. Es un un único archivo alojado en un repositorio de Github
+                y desplegado en Github Pages.</p>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <!-- Contenedor para los campos de entrada -->
+                <div class="form-container">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Galería de Arte - nonspada</p>
+    </footer>
+</body>
+
+</html>
