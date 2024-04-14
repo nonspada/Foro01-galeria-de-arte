@@ -2,6 +2,8 @@
 
 ## ​Parte 1: Construcción del HTML
 
+<img src="captura.png">
+
 > Página HTML para tarea Foro 1 en plataforma EVA.
 
 - Asignatura: **Taller de Tecnologías Web - sección 52**
