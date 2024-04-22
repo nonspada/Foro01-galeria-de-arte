@@ -4,280 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería de Arte</title>
-    <style>
-        /* Estilos CSS */
-
-        /* Estilos generales del cuerpo del documento */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-color: #f7f7f7;
-            /* Color de fondo elegante */
-        }
-
-        /* Estilos del header */
-        header,
-        nav {
-            background-color: #f9e6e6;
-            /* Color de fondo del header y navbar */
-            padding: 10px 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Estilos del navbar */
-        nav {
-            text-align: center;
-        }
-
-        /* Estilos de títulos */
-        h1,
-        h2 {
-            text-align: center;
-        }
-
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #555;
-            /* Color de los enlaces del navbar */
-            font-weight: bold;
-        }
-
-        /* Contenedor principal */
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            /* Centra horizontalmente */
-            padding: 0 20px;
-            /* Añade un espacio a los lados */
-        }
-
-        /* Estilos de las secciones */
-        .section {
-            display: none;
-            padding: 20px;
-            background-color: #fff;
-            /* Color de fondo de las secciones */
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-            /* Espacio entre secciones */
-            width: 100%;
-            /* Ocupa todo el ancho */
-            max-width: 600px;
-            /* Limita el ancho */
-        }
-
-        /* Estilo para mostrar la sección activa */
-        .section.active {
-            display: block;
-        }
-
-        /* Estilos del footer */
-        footer {
-            background-color: #f9e6e6;
-            /* Color de fondo del footer */
-            padding: 10px 20px;
-            margin-top: auto;
-            text-align: center;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Estilo de subtítulo */
-        h2 {
-            text-align: center;
-        }
-
-        /* Estilos del formulario */
-        form {
-            margin: auto;
-            background-color: #f9e6e6;
-            /* Color de fondo del formulario */
-            padding: 3vh 4%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            /* Limita el ancho */
-            width: 100%;
-            /* Ocupa todo el ancho */
-        }
-
-        /* Estilos de los campos del formulario */
-        input[type="text"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-
-        /* Estilos del botón de envío */
-        input[type="submit"] {
-            background-color: #4caf50;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        /* Estilos de la galería de imágenes */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            grid-gap: 20px;
-        }
-
-        /* Estilos de cada elemento de la galería */
-        .gallery-item {
-            background-color: #ddd;
-            /* Color de fondo de las imágenes */
-            border-radius: 8px;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .gallery-item img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
-        }
-
-        .gallery-item p {
-            margin-top: 10px;
-        }
-    </style>
+    <title>🎭 Souvenir, tu galería de arte</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <h1>Galería de Arte</h1>
+        <h1>◾ Souvenir, tu galería de arte ◾</h1>
     </header>
     <!-- Navbar -->
     <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#sobremi">Sobre la página</a>
-        <a href="#contacto">Contacto</a>
+        <a class="stylish" href="#">Inicio</a>
+        <a class="stylish" href="galeria.html">Galería</a>
+        <a class="stylish" href="contacto.html">Contacto</a>
     </nav>
     <!-- Contenedor principal -->
     <div class="container">
-        <!-- Sección de Inicio -->
-        <section id="inicio" class="section active">
-            <h2>Galería</h2>
-            <!-- Galería de imágenes -->
-            <div class="gallery">
-                <!-- Elemento de la galería -->
-                <div class="gallery-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/640px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
-                        alt="Obra de arte">
-                    <p>Mona Lisa or La Gioconda by Leonardo Da Vinci</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Tsuglag_Gyatso%2C_the_Third_Pawo_Rinpoche_%28c._1567-1630%29_-_Google_Art_Project.jpg/640px-Tsuglag_Gyatso%2C_the_Third_Pawo_Rinpoche_%28c._1567-1630%29_-_Google_Art_Project.jpg"
-                        alt="Obra de arte">
-                    <p>Portrait of Tsuglag Gyatso, the Third Pawo Rinpoche, painting, pigment on cloth (c. 1567-1630)
-                    </p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Jean-Baptiste_Perronneau_-_Magdaleine_Pinceloup_de_la_Grange%2C_n%C3%A9e_de_Parseval.jpg/640px-Jean-Baptiste_Perronneau_-_Magdaleine_Pinceloup_de_la_Grange%2C_n%C3%A9e_de_Parseval.jpg"
-                        alt="Obra de arte">
-                    <p>Magdaleine Pinceloup de la Grange by Jean-Baptiste Perronneau</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Edouard_Manet_-_At_the_Caf%C3%A9_-_Google_Art_Project.jpg/640px-Edouard_Manet_-_At_the_Caf%C3%A9_-_Google_Art_Project.jpg"
-                        alt="Obra de arte">
-                    <p>At a café by Édouard Manet</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/William_Bouguereau_-_Dante_and_Virgile_-_Google_Art_Project_2.jpg/640px-William_Bouguereau_-_Dante_and_Virgile_-_Google_Art_Project_2.jpg"
-                        alt="Obra de arte">
-                    <p>Dante and Virgile by William Bouguereau</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg/640px-Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg"
-                        alt="Obra de arte">
-                    <p>Self-Portrait by Rembrandt van Rijn</p>
-                </div>
-            </div>
-        </section>
         <!-- Sección Sobre la página -->
-        <section id="sobremi" class="section">
-            <h2>Sobre la página</h2>
-            <p>Está página web fue hecha en HTML, CSS y un poco de Javascript. Es un único archivo alojado en un
-                repositorio de Github
-                y desplegado en Github Pages.</p>
-            <p>Su finalidad es ayudar comprender de forma práctica cómo los elementos HTML estructuran una
-                página, cómo CSS aplica estilos a ellos, y cómo se despliega el resultado de ésta para que sea
-                disponible desde una
-                URL en la web.</p>
-            <p>Para su fabricación se usaron herramientas populares para el desarrollo web, tales como IDE, sistemas de
-                control de versiones (Git), imágenes de Wikipedia e IA generativas.</p>
+        <section id="sobremi" class="section active">
+            <h2 class="stylish">Bienvenidos a la galería de artes más exclusiva 🎩</h2>
+            <p class="stylish">Souvenir, la galería de arte más exclusiva, cuenta con más de 100 años de historia
+                conservando obras importantes para la cultura occidental y oriental.</p>
+            <p class="stylish">Las más exquisitas obras para los coleccionistas más refinados. Sin importar lo compleja
+                de la tarea, nuestros curadores y agentes se encargarán de hacer realidad tu fantasía de poseer algún
+                tesoro de la expresión artística humana dentro de tus posesiones.</p>
+            <p class="stylish">Siguiendo los principios de nuestro fundador, Vincenzo Peruggia (1881-1925), hemos
+                mantenido un estándar de compromiso y calidad sin parangón. 💎</p>
+            <h4>Más información:</h4>
             <ul>
-                <li>Link al repositorio en <a href="https://github.com/nonspada/Foro01-galeria-de-arte" target="_blank"
-                        rel="noopener noreferrer">Github</a>.</li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
-            <hr>
-            <p>El formularió de contacto es solo de ejemplo. Cualquier duda o comentario hacerlo a través del repositorio o vía <a href="mailto:patricio.aliste.salas@ciisa.cl">email</a>.</p>
+
         </section>
-        <!-- Sección Contacto -->
-        <section id="contacto" class="section">
-            <h2>Contacto</h2>
-            <!-- Formulario de contacto -->
-            <div class="form-container">
-                <form>
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Correo electrónico">
-                    <textarea placeholder="Mensaje"></textarea>
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
-        </section>
+
     </div>
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Galería de Arte - nonspada</p>
+        <p>&copy; 2024 Souvenir - <a href="https://github.com/nonspada" target="_blank">nonspada</a> 🃏</p>
     </footer>
 
-    <!-- Script para la funcionalidad del navbar -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Obtener todos los enlaces del navbar
-            const links = document.querySelectorAll('nav a');
 
-            // Iterar sobre cada enlace
-            links.forEach(function (link) {
-                link.addEventListener('click', function (event) {
-                    // Prevenir el comportamiento predeterminado
-                    event.preventDefault();
-
-                    // Obtener el valor del atributo href
-                    const targetId = this.getAttribute('href').substring(1);
-
-                    // Obtener todas las secciones
-                    const sections = document.querySelectorAll('.section');
-
-                    // Ocultar todas las secciones
-                    sections.forEach(function (section) {
-                        section.classList.remove('active');
-                    });
-
-                    // Mostrar la sección correspondiente al enlace
-                    document.getElementById(targetId).classList.add('active');
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>

@@ -1,10 +1,10 @@
-# Desarrollo de un Sitio Web para Galería de Arte
+# Evaluación de unidad 1
 
 ## ​Parte 1: Construcción del HTML
 
-<img src="captura.png">
 
-> Página HTML para tarea Foro 1 en plataforma EVA.
+
+> Página HTML para evaluación unidad 1 en plataforma EVA.
 
 - Asignatura: **Taller de Tecnologías Web - sección 52**
 - Profesor: Justo Miguel Vargas

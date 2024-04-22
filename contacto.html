@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería de arte</title>
+    <title>📣 Souvenir, tu galería de arte</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <!-- Header -->
+    <header>
+        <h1>◾ Souvenir, tu galería de arte ◾</h1>
+    </header>
+    <!-- Navbar -->
+    <nav>
+        <a class="stylish" href="index.html">Inicio</a>
+        <a class="stylish" href="galeria.html">Galería</a>
+        <a class="stylish" href="#">Contacto</a>
+    </nav>
+    <div class="container">
+        <!-- Sección Contacto -->
+        <section id="contacto">
+            <h2 class="stylish">¿Necesitas alguna obra de arte? ¡contáctanos!:</h2>
+            <!-- Formulario de contacto -->
+            <div class="form-container">
+                <form>
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <select name="tipo-solicitud">
+                        <option value="Compra">Compra</option>
+                        <option value="Consulta">Consulta</option>
+                        <option value="Venta">Venta</option>
+                    </select>
+                    <textarea placeholder="Mensaje" required></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+                <p>Para otro tipos de consultas llama al <a href="tel:#+">+659999999</a> o envíanos un correo a <a href="mailto:">arte@souvenir.com</a>.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Souvenir - <a href="https://github.com/nonspada" target="_blank">nonspada</a> 🃏</p>
+    </footer>
 </body>
+
 </html>
