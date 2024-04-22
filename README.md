@@ -7,4 +7,4 @@
 - Profesor: Justo Miguel Vargas
 - Alumno: Patricio Aliste Salas
 
-link de página desplegada en [render.com](https://foro01-galeria-de-arte.onrender.com/contacto.html).
+link de página desplegada en [render.com](https://foro01-galeria-de-arte.onrender.com/).
