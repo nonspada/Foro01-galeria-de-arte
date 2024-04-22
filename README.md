@@ -1,8 +1,5 @@
 # Evaluación de unidad 1
 
-## ​Parte 1: Construcción del HTML
-
-
 
 > Página HTML para evaluación unidad 1 en plataforma EVA.
 
@@ -10,4 +7,4 @@
 - Profesor: Justo Miguel Vargas
 - Alumno: Patricio Aliste Salas
 
-link de página desplegada en [Github pages](https://nonspada.github.io/Foro01-galeria-de-arte/).
+link de página desplegada en [render.com](https://foro01-galeria-de-arte.onrender.com/contacto.html).
