@@ -1,5 +1,12 @@
 /* Estilos CSS */
 
+/* Reset CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
 /* Estilos generales del cuerpo del documento */
 body {
     font-family: Arial, sans-serif;
@@ -17,13 +24,17 @@ header,
 nav {
     background-color: #f9e6e6;
     /* Color de fondo del header y navbar */
-    padding: 10px 20px;
+    padding: 1rem 3rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos del navbar */
 nav {
     text-align: center;
+}
+
+.menu-nav li {
+    display: inline-block;
 }
 
 /* Estilos de títulos */
@@ -41,6 +52,9 @@ nav a {
     color: #555;
     /* Color de los enlaces del navbar */
     font-weight: bold;
+}
+nav a:hover {
+    color: blueviolet;
 }
 
 /* Contenedor principal */
@@ -153,3 +167,6 @@ input[type="submit"] {
 .stylish {
     font-style: italic;
 }
+
+
+
